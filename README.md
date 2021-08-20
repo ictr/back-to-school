@@ -5,7 +5,7 @@
 * Institute for Clinical & Translational Research, Baylor College of Medicine
 
 
-[**REPORT**]()
+[**REPORT**](https://ictr.github.io/back-to-school/)
 
 With the increasing incidences of [COVID-19 infections in the Greater Houston Area](https://www.tmc.edu/coronavirus-updates/daily-new-covid-19-positive-cases-for-the-greater-houston-area/) and all students are coming back to school, there has been an increasing debate on whether or not teacher and students should wear masks all the time.
 
@@ -18,9 +18,10 @@ We ran a small simulation using our [COVID-19 Outbreak Simulator](https://ictr.g
 
 # How to reproduce this simulation
 
-1. Install [COVID-19 Outbreak Simulator]()
-2. Install jupyterlab, and jupyterlab-sos, which will install the SoS Polyglot Notebook and SoS Workflow Engine.
-3. After finishing the report, use command
+1. Install [COVID-19 Outbreak Simulator](https://github.com/ictr/covid19-outbreak-simulator)
+2. Install [jupyterlab](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html), and [jupyterlab-sos](https://github.com/vatlab/jupyterlab-sos), which will install the [SoS Polyglot Notebook and SoS Workflow Engine](https://vatlab.github.io/sos-docs/).
+3. Start a jupyter lab server and open the `back-to-school.ipynb` notebook.
+4. After finishing the report, use command
 
   ```
   sos convert back_to_school.ipynb index.html --template sos-report-only
