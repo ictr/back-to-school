@@ -13773,54 +13773,19 @@ textarea.sos-source {
       </div><div class="cell border-box-sizing text_cell rendered">
       <div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <h1 id="Method">Method<a class="anchor-link" href="#Method">&#182;</a></h1><p>We assume that all students and teachers live in the same "community" that is subject to a fixed "community infection rate", which is the probability that people are infected. People who are infected from the community would go to school, with or without mask, and have the probability of infecting others. People who show symptoms are isolated for 10 days before they go back to school, at which time they have recovered and are largely immune to reinfection. We <strong>do not yet model other post-infection reactions such as contact tracing and testing</strong>, which are being employed by many schools and universities to prevent the spread of the coronavirus.</p>
-<p>We assume</p>
-<ul>
-<li><p><strong>Community infection rate (CIR)</strong>: CIR is the actual community rate of infection and is used to model the probability at which people are infected. The actual number will differ from the Public Health reported confirmed case numbers due to reporting delays and the sufficiency of testing (see <a href="https://ourworldindata.org/covid-models">https://ourworldindata.org/covid-models</a> for an expanded discussion). As of writing,</p>
-<ul>
-<li>There are around <code>2000</code> confirmed cases per day in the Harris County with <code>4.7 M</code> people, or</li>
-<li>Around <code>3000</code> confirmed cases per day in the Greater Houston Area with a population of about <code>9</code> million,</li>
-</ul>
-<p>so the raw CIR is about <code>400 / million</code>. Using a popular method to adjust for the under-reporting of actual CIR, namely multiplying the number of confirmed cases by a factor of 4, we use <strong>1600 / million</strong> as the CIR for the Greater Houston Area. Note that the estimates from <a href="https://covid19.healthdata.org/global?view=cumulative-deaths&amp;tab=trend">The Institute for Health Metrics and Evaluation (IHME) an independent global health research center at the University of Washington</a> is around 2121 per million for the state of Texas.</p>
-</li>
-<li><p><strong>Vaccination coverage</strong>: According to government report, 45.7% of people are fully vaccinated in Texas. We assume that adults (teachers) have higher vaccination rate and assume that</p>
-<ul>
-<li>60% of all students and teachers are vaccinated in high schools and colleges.</li>
-<li>60% of teachers are vaccinated in elementary schools, but students were not vaccinated.</li>
-</ul>
-</li>
-<li><p><strong>Size of schools</strong>: According to online information, we assume that</p>
-<ul>
-<li>High schools have 800 students with a 15:1 teacher student ratio (50 teachers, 50 staff).</li>
-<li>Elementary schools have 500 students with a 15:1 teacher student ratio (30 teachers, 30 staff).</li>
-</ul>
-</li>
-<li><p><strong>Transmissibility of virus</strong>: The highly contagious delta variant has become the most prevalent version of COVID-19 in the country, and also in the state of Texas. The delta variant has</p>
-<ul>
-<li>A reproduction number of around <code>6.5</code> for symptomatic cases (range 5-8)</li>
-<li>A reproduction number of <code>4.6</code> for asymptomatic carriers because we assume that asymptomatic carriers are 70% infectious compared to symptomatic carriers.</li>
-<li>An incubation period <code>4.4</code></li>
-<li><code>30%</code> of people will remain asymptomatic after being infected.</li>
-</ul>
-</li>
-<li><p><strong>Efficacy of vaccine</strong>: Most Houstonians were vaccinated with the Pfizer vaccine, which is reported to</p>
-<ul>
-<li>Has <code>42%</code> to <code>60%</code> efficacy for preventing infection</li>
-<li>Reduces viral loads of infected people by around 50%</li>
-<li>Has around <code>50%</code> efficacy for preventing secondary infection.</li>
-</ul>
-</li>
-<li><p><strong>Duration of simulation</strong>: We simulate the operating of schools for a month (28 days, 20 working days).</p>
-</li>
-<li><p><strong>Mask wearing</strong>: We simulate three scenarios,</p>
-<ul>
-<li>no mask</li>
-<li>with mask, which causes 80% reduction in the transmission of the virus</li>
-<li>some mask, which corresponds to the case of no mandated mask wearing, perhaps 50% of people will wear mask and lead to 40% reduction in the transmission of the virus.</li>
-</ul>
-</li>
-</ul>
-<p>We output the number of infections and symptomatic cases in both high schools and elementary schools.</p>
+      <h1 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h1>
+      </div>
+      </div>
+      </div><div class="cell border-box-sizing text_cell rendered">
+      <div class="inner_cell">
+      <div class="text_cell_render border-box-sizing rendered_html">
+      <p>The delta variant is highly infectious. With the existing high community infection rate,</p>
+<ol>
+<li>Almost all schools will have at least 1 school-acquired infection.</li>
+<li>If masks are wore all the time, <code>1.5%</code> of high school students will got infected from school. The risk is lower than getting infected from the community (<code>2.6%</code>). The proportions are higher for elementary schools (<code>4.6%</code> and <code>3.3%</code> respectively) because students are not vaccinated.</li>
+<li>If masks are not worn at all, <code>60%</code> of high school students will be infected in a month, and almost all students in elementary schools will be infected. Again, we are assuming that no post-infection contact tracing and testing will be performed so asymptomatic carriers will continue to attend school and infect others.</li>
+<li>The proportion of students who will be isolated due to the showing of symptoms will be <code>2%</code> for high school students and <code>4%</code> for elementary school students if masks are worn. About a quarter of students in high school and half of students in elementary schools will be isolated.</li>
+</ol>
 
       </div>
       </div>
@@ -13953,19 +13918,54 @@ textarea.sos-source {
 <div class="cell border-box-sizing text_cell rendered">
       <div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1>
-      </div>
-      </div>
-      </div><div class="cell border-box-sizing text_cell rendered">
-      <div class="inner_cell">
-      <div class="text_cell_render border-box-sizing rendered_html">
-      <p>The delta variant is highly infectious. With the existing high community infection rate,</p>
-<ol>
-<li>Almost all schools will have at least 1 school-acquired infection.</li>
-<li>If masks are wore all the time, <code>1.5%</code> of high school students will got infected from school. The risk is lower than getting infected from the community (<code>2.6%</code>). The proportions are higher for elementary schools (<code>4.6%</code> and <code>3.3%</code> respectively) because students are not vaccinated.</li>
-<li>If masks are not worn at all, <code>60%</code> of high school students will be infected in a month, and almost all students in elementary schools will be infected. Again, we are assuming that no post-infection contact tracing and testing will be performed so asymptomatic carriers will continue to attend school and infect others.</li>
-<li>The proportion of students who will be isolated due to the showing of symptoms will be <code>2%</code> for high school students and <code>4%</code> for elementary school students if masks are worn. About a quarter of students in high school and half of students in elementary schools will be isolated.</li>
-</ol>
+      <h1 id="Method">Method<a class="anchor-link" href="#Method">&#182;</a></h1><p>We assume that all students and teachers live in the same "community" that is subject to a fixed "community infection rate", which is the probability that people are infected. People who are infected from the community would go to school, with or without mask, and have the probability of infecting others. People who show symptoms are isolated for 10 days before they go back to school, at which time they have recovered and are largely immune to reinfection. We <strong>do not yet model other post-infection reactions such as contact tracing and testing</strong>, which are being employed by many schools and universities to prevent the spread of the coronavirus.</p>
+<p>We assume</p>
+<ul>
+<li><p><strong>Community infection rate (CIR)</strong>: CIR is the actual community rate of infection and is used to model the probability at which people are infected. The actual number will differ from the Public Health reported confirmed case numbers due to reporting delays and the sufficiency of testing (see <a href="https://ourworldindata.org/covid-models">https://ourworldindata.org/covid-models</a> for an expanded discussion). As of writing,</p>
+<ul>
+<li>There are around <code>2000</code> confirmed cases per day in the Harris County with <code>4.7 M</code> people, or</li>
+<li>Around <code>3000</code> confirmed cases per day in the Greater Houston Area with a population of about <code>9</code> million,</li>
+</ul>
+<p>so the raw CIR is about <code>400 / million</code>. Using a popular method to adjust for the under-reporting of actual CIR, namely multiplying the number of confirmed cases by a factor of 4, we use <strong>1600 / million</strong> as the CIR for the Greater Houston Area. Note that the estimates from <a href="https://covid19.healthdata.org/global?view=cumulative-deaths&amp;tab=trend">The Institute for Health Metrics and Evaluation (IHME) an independent global health research center at the University of Washington</a> is around 2121 per million for the state of Texas.</p>
+</li>
+<li><p><strong>Vaccination coverage</strong>: According to government report, 45.7% of people are fully vaccinated in Texas. We assume that adults (teachers) have higher vaccination rate and assume that</p>
+<ul>
+<li>60% of all students and teachers are vaccinated in high schools and colleges.</li>
+<li>60% of teachers are vaccinated in elementary schools, but students were not vaccinated.</li>
+</ul>
+</li>
+<li><p><strong>Size of schools</strong>: According to online information, we assume that</p>
+<ul>
+<li>High schools have 800 students with a 15:1 teacher student ratio (50 teachers, 50 staff).</li>
+<li>Elementary schools have 500 students with a 15:1 teacher student ratio (30 teachers, 30 staff).</li>
+</ul>
+</li>
+<li><p><strong>Transmissibility of virus</strong>: The highly contagious delta variant has become the most prevalent version of COVID-19 in the country, and also in the state of Texas. The delta variant has</p>
+<ul>
+<li>A reproduction number of around <code>6.5</code> for symptomatic cases (range 5-8)</li>
+<li>A reproduction number of <code>4.6</code> for asymptomatic carriers because we assume that asymptomatic carriers are 70% infectious compared to symptomatic carriers.</li>
+<li>An incubation period <code>4.4</code></li>
+<li><code>30%</code> of people will remain asymptomatic after being infected.</li>
+</ul>
+</li>
+<li><p><strong>Efficacy of vaccine</strong>: Most Houstonians were vaccinated with the Pfizer vaccine, which is reported to</p>
+<ul>
+<li>Has <code>42%</code> to <code>60%</code> efficacy for preventing infection</li>
+<li>Reduces viral loads of infected people by around 50%</li>
+<li>Has around <code>50%</code> efficacy for preventing secondary infection.</li>
+</ul>
+</li>
+<li><p><strong>Duration of simulation</strong>: We simulate the operating of schools for a month (28 days, 20 working days).</p>
+</li>
+<li><p><strong>Mask wearing</strong>: We simulate three scenarios,</p>
+<ul>
+<li>no mask</li>
+<li>with mask, which causes 80% reduction in the transmission of the virus</li>
+<li>some mask, which corresponds to the case of no mandated mask wearing, perhaps 50% of people will wear mask and lead to 40% reduction in the transmission of the virus.</li>
+</ul>
+</li>
+</ul>
+<p>We output the number of infections and symptomatic cases in both high schools and elementary schools.</p>
 
       </div>
       </div>
