@@ -85,7 +85,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
 
 
-
 <style type="text/css">
 /*!
 *
@@ -13052,14 +13051,6 @@ div#notebook {
 </style>
 
 
-<style>
-.sos_hint {
-  display: none;
-}
-</style>
-
-
-
 <!-- Load mathjax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML-full,Safe"> </script>
     <!-- MathJax configuration -->
@@ -13133,7 +13124,6 @@ div#notebook {
 	border: none;
 	margin: 0;
 	padding: 6px 13px;
-	white-space: break-spaces;
 }
 
 .rendered_html table tr td {
@@ -13752,7 +13742,7 @@ textarea.sos-source {
 <div class="cell border-box-sizing text_cell rendered">
       <div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <h1 id="Mask-or-no-mask:-a-decision-for-teachers,-parents,-and-students">Mask or no mask: a decision for teachers, parents, and students<a class="anchor-link" href="#Mask-or-no-mask:-a-decision-for-teachers,-parents,-and-students">&#182;</a></h1><ul>
+      <h1 id="Mask-or-no-mask:-A-decision-guide-for-teachers,-parents,-and-students">Mask or no mask: A decision guide for teachers, parents, and students<a class="anchor-link" href="#Mask-or-no-mask:-A-decision-guide-for-teachers,-parents,-and-students">&#182;</a></h1><ul>
 <li>August, 2021</li>
 <li>Institute for Clinical &amp; Translational Research, Baylor College of Medicine</li>
 </ul>
@@ -13762,21 +13752,27 @@ textarea.sos-source {
       </div><div class="cell border-box-sizing text_cell rendered">
       <div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <p>With the increasing incidences of <a href="https://www.tmc.edu/coronavirus-updates/daily-new-covid-19-positive-cases-for-the-greater-houston-area/">COVID-19 infections in the Greater Houston Area</a> and all students are coming back to school, there has been an increasing debate on whether or not teacher and students should wear masks all the time.</p>
-<p>As of today (August 20),</p>
+      <h1 id="Context">Context<a class="anchor-link" href="#Context">&#182;</a></h1>
+      </div>
+      </div>
+      </div><div class="cell border-box-sizing text_cell rendered">
+      <div class="inner_cell">
+      <div class="text_cell_render border-box-sizing rendered_html">
+      <p>With  increasing incidences of <a href="https://www.tmc.edu/coronavirus-updates/daily-new-covid-19-positive-cases-for-the-greater-houston-area/">COVID-19 infections in the Greater Houston Area</a> and  students returning to school, informed decisions must be made regarding teacher and student continuous masking recommendations.</p>
+<p>As of today (August 21),</p>
 <ol>
-<li>Gov. Abbott issued an executive order <a href="https://gov.texas.gov/news/post/governor-abbott-issues-executive-order-prohibiting-government-entities-from-mandating-masks">Prohibiting Government Entities From Mandating Masks</a></li>
-<li><a href="https://www.houstonisd.org/">Houston ISD</a> is one of <a href="https://www.khou.com/article/news/health/coronavirus/masks-houston-school-districts-covid-coronavirus/285-25154fcd-97ae-4d8b-9444-be77a0b58f89">a handful of schools in the Houston area</a> with a mask mandate</li>
-<li>Colleges in the surrounding areas have different policies. Notably, the Rice University have <a href="https://coronavirus.rice.edu/policies">COVID policies that mandate mask wearing indoors</a>. However, during an intense oritentation week, there are already COVID-19 cases in one of its colleges, and all students are being tested.</li>
+<li>An executive order is in place which <a href="https://gov.texas.gov/news/post/governor-abbott-issues-executive-order-prohibiting-government-entities-from-mandating-masks">prohibits Texas government funded entities from mandating mask wearing on premises</a>.</li>
+<li><a href="https://www.houstonisd.org/">Houston ISD</a> is one of <a href="https://www.khou.com/article/news/health/coronavirus/masks-houston-school-districts-covid-coronavirus/285-25154fcd-97ae-4d8b-9444-be77a0b58f89">a handful of schools in the Houston area</a> which does have a mask wearing mandate in place.</li>
+<li>Colleges in the our area have established differing policies. Notably, Rice University has <a href="https://coronavirus.rice.edu/policies">COVID policies that mandate mask wearing indoors</a>. </li>
 </ol>
-<p>We ran a small simulation using our <a href="https://ictr.github.io/covid19-outbreak-simulator/">COVID-19 Outbreak Simulator</a> and try to compare number of COVID-cases for schools that mandate or does not mandate mask wearing.</p>
+<p>To provide quantitative insight into these mixed stances, we ran a small feed forward simulation using our <a href="https://ictr.github.io/covid19-outbreak-simulator/">COVID-19 Outbreak Simulator</a>  to compare the number of COVID-cases that can be expected for schools which mask versus those which do not utilize mask wearing.</p>
 
       </div>
       </div>
       </div><div class="cell border-box-sizing text_cell rendered">
       <div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <p><strong>Disclaimer</strong>: This report was prepared by researchers in the <a href="https://www.bcm.edu/research/research-offices/institute-for-clinical-translational-research">Institute for Clinical &amp; Translational Research</a>, Baylor College of Medicine. It uses a simplistic model to predict the impact of mask wearing on COVID-19 incidences in public schools in the Greater Houston Area, and do not necessarily reflect variations of COVID-prevention policies that are in place in these schools.</p>
+      <p><strong>Disclaimer</strong>: This report was prepared by researchers in the <a href="https://www.bcm.edu/research/research-offices/institute-for-clinical-translational-research">Institute for Clinical &amp; Translational Research</a>, Baylor College of Medicine. It uses a simplistic model to predict the impact of mask wearing on COVID-19 incidences in public schools in the Greater Houston Area, and does not necessarily reflect the impact of other site specific COVID-prevention policies that may be in place at each of these these schools.</p>
 
       </div>
       </div>
@@ -13789,10 +13785,10 @@ textarea.sos-source {
       </div><div class="cell border-box-sizing text_cell rendered">
       <div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <p>The delta variant is highly infectious. With the existing high community infection rate,</p>
+      <p>The delta variant is highly infectious. With the Houston's existing high regional community infection rate we found that:</p>
 <ol>
 <li>Almost all schools will have at least 1 school-acquired infection.</li>
-<li>If masks are wore all the time, <code>1.5%</code> of high school students will got infected from school. The risk is lower than getting infected from the community (<code>2.6%</code>). The proportions are higher for elementary schools (<code>4.6%</code> and <code>3.3%</code> respectively) because students are not vaccinated.</li>
+<li>If masks are wore all the time, <code>1.5%</code> of high school students will get infected while at school. This risk is, however, lower than getting infected from the community (<code>2.6%</code>). The proportions of students who will get infected while at school are higher for elementary schools(<code>4.6%</code> and <code>3.3%</code> respectively) because this student population is not vaccinated.</li>
 <li>If masks are not worn at all, <code>60%</code> of high school students will be infected in a month, and almost all students in elementary schools will be infected. Again, we are assuming that no post-infection contact tracing and testing will be performed so asymptomatic carriers will continue to attend school and infect others.</li>
 <li>The proportion of students who will be isolated due to the showing of symptoms will be <code>2%</code> for high school students and <code>4%</code> for elementary school students if masks are worn. About a quarter of students in high school and half of students in elementary schools will be isolated.</li>
 </ol>
@@ -13824,6 +13820,79 @@ textarea.sos-source {
    
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="inner_cell" >
+  <div class="input_area cm-s-ipython" style="min-height: 41.17157em">
+   <textarea rows="33"
+      class="sos-source" name="SoS">## This function retrieves results for all contexts as a Python DataFrame.
+
+import pickle
+import os
+import pandas as pd
+
+def get_results(contexts):
+    all_res = []
+    for context in contexts:
+        res_file = path(f'{context["name"]}.pickle')
+        if not res_file.exists():
+            print(f'Missing {context["name"]}')
+            continue
+        with open(res_file, 'rb') as infile:
+            loaded = pickle.load(infile)
+            #if not 'num_replicates' in loaded or loaded["num_replicates"] < context["num_replicates"]:
+            #    print(f'WRONG {context["name"]}')
+                #os.remove(res_file)
+                #continue
+            res = {
+                'School': context['school'],
+                'Mask wearing': context['mask_wearing'],
+#                 'Vaccination coverage (%)': int(context['vac_coverage'] * 100),
+                
+            }
+            res.update(loaded)
+            res.pop('num_replicates', None)
+            all_res.append(res)
+
+    all_res = pd.DataFrame(all_res)
+    return all_res
+
+pd.options.display.float_format = '{:,.1f}'.format
+</textarea>
+  </div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class="sos_lan_SoS">
+   
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="inner_cell" >
+  <div class="input_area cm-s-ipython" style="min-height: 21.74293em">
+   <textarea rows="17"
+      class="sos-source" name="SoS">%preview  res 
+
+res = get_results(all_contexts)
+
+with pd.ExcelWriter(path(f'results.xlsx'), engine='xlsxwriter') as writer: 
+    res.to_excel(writer, index=False, sheet_name='All')
+    
+    workbook  = writer.book
+    
+    fmt_num = workbook.add_format({'num_format': '0.00'})
+    header_format = workbook.add_format({
+        'bold': True,
+        'text_wrap': True})
+    
+    worksheet = writer.sheets["All"]
+    worksheet.set_column('J:P', None, fmt_num)
+    #worksheet.set_row(0, 0, header_format)</textarea>
+  </div>
+</div>
 
 </div>
 
@@ -13987,6 +14056,695 @@ textarea.sos-source {
       </div>
       </div>
       </div>
+
+<div class="sos_lan_SoS">
+   
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="inner_cell" >
+  <div class="input_area cm-s-ipython" style="min-height: 110.3861em">
+   <textarea rows="90"
+      class="sos-source" name="SoS">import pandas as pd
+
+school_spec = {
+    'high': {'teachers': 'T=100', 'students': 'S=800', 'vac_coverage': 'T=0.6 S=0.6' },
+    'elementary': {'teachers': 'T=60', 'students': 'S=500', 'vac_coverage': 'T=0.6 S=0' }
+}
+
+communities = {
+    'C1600': dict(community_infection_rate=1600 / 1000000),
+    # 'D400': dict(community_infection_rate=400 / 1000000),
+}
+
+
+variants = {
+    'delta': dict(sym_r0=[5, 8], asym_r0=[5*0.75, 8*0.75], incu_period=4.4, name='B.1.617.2', prop_asym_carriers=0.3),
+}
+
+# 86/76 for alpha; 76/42 for delta; and 75-81% protection against hospitalizations.
+vaccination_specs = {
+    'pfizer': dict(
+            delta=dict(vac_immunity=[0.42, 0.38], vac_infectivity=[0.5, 0.5]),
+        ),    
+}
+
+distancing_spec = {
+    'no_mask': 1,
+    'with_mask': 0.2,
+    'partial_mask': 0.6
+}
+
+def get_single_context(
+    school,
+    distancing,
+    community,
+):
+    variant = 'delta'
+    vac_name = 'pfizer'
+    return dict(
+        name=f'{community}_{school}_{distancing}',
+        school=school,
+        mask_wearing=distancing,
+        #
+        community_infection_rate=communities[community]['community_infection_rate'],
+        #
+        vac_proportion=school_spec[school]['vac_coverage'],
+        
+        vac_immunity=' '.join(str(x) for x in vaccination_specs[vac_name][variant]['vac_immunity']),
+        vac_infectivity=' '.join(str(x) for x in vaccination_specs[vac_name][variant]['vac_infectivity']),
+                
+        # constant
+        pop_size=school_spec[school]['teachers'] + ' ' + school_spec[school]['students'],
+        prop_asym_carriers=variants[variant]["prop_asym_carriers"],
+        
+        sym_r0=f'{variants[variant]["sym_r0"][0]:.2f} {variants[variant]["sym_r0"][1]:.2f}',
+        asym_r0=f'{variants[variant]["asym_r0"][0]:.2f} {variants[variant]["asym_r0"][1]:.2f}',
+        incu_period=variants[variant]["incu_period"],        
+        
+        distancing_multiplier=distancing_spec[distancing],
+        duration=20,
+        #
+        # use more replicates for lower community infection rate to save computing time
+        num_replicates=5000)
+
+
+def unique_contexts(contexts):
+    names = set()
+    res = []
+    for context in contexts:
+        if not context:
+            continue
+        if context['name'] in names:
+            continue
+        res.append(context)
+        names.add(context['name'])
+    return res
+
+
+def get_contexts(
+    school_cases=[],    
+    distancing_cases=[],    
+    community_cases=[],
+):
+    contexts = []
+    for school in school_cases:
+        for distancing in distancing_cases:
+            for community in community_cases:
+                contexts.append(
+                                get_single_context(school, distancing, community))
+    # remove duplicate
+    return unique_contexts(contexts)
+</textarea>
+  </div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class="sos_lan_SoS">
+   
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="inner_cell" >
+  <div class="input_area cm-s-ipython" style="min-height: 14.45719em">
+   <textarea rows="11"
+      class="sos-source" name="SoS">%preview cases -l 400
+
+all_contexts = get_contexts(
+    school_cases=['high', 'elementary'],
+    community_cases=[
+        'C1600',
+    ],
+    distancing_cases=['with_mask', 'partial_mask', 'no_mask'],
+)
+
+cases = pd.DataFrame(all_contexts)</textarea>
+  </div>
+</div>
+
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<div class="sos_hint">> cases: DataFrame of shape (6, 15)</div>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_html rendered_html output_subarea ">
+
+    <div class='dataframe_container' style="max-height:400px">
+    <input type="text" class='dataframe_input' id="search_780u7dz1" onkeyup="filterDataFrame('780u7dz1')" placeholder="Search for names..">
+    <table border="1" id="dataframe_780u7dz1" class="sos_dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th> &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 0, 'numeric')"></th>
+      <th>name &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 1, 'alphabetic')"></th>
+      <th>school &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 2, 'alphabetic')"></th>
+      <th>mask_wearing &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 3, 'alphabetic')"></th>
+      <th>community_infection_rate &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 4, 'numeric')"></th>
+      <th>vac_proportion &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 5, 'alphabetic')"></th>
+      <th>vac_immunity &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 6, 'alphabetic')"></th>
+      <th>vac_infectivity &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 7, 'alphabetic')"></th>
+      <th>pop_size &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 8, 'alphabetic')"></th>
+      <th>prop_asym_carriers &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 9, 'numeric')"></th>
+      <th>sym_r0 &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 10, 'alphabetic')"></th>
+      <th>asym_r0 &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 11, 'alphabetic')"></th>
+      <th>incu_period &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 12, 'numeric')"></th>
+      <th>distancing_multiplier &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 13, 'numeric')"></th>
+      <th>duration &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 14, 'numeric')"></th>
+      <th>num_replicates &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('780u7dz1', 15, 'numeric')"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>C1600_high_with_mask</td>
+      <td>high</td>
+      <td>with_mask</td>
+      <td>0.0</td>
+      <td>T=0.6 S=0.6</td>
+      <td>0.42 0.38</td>
+      <td>0.5 0.5</td>
+      <td>T=100 S=800</td>
+      <td>0.3</td>
+      <td>5.00 8.00</td>
+      <td>3.75 6.00</td>
+      <td>4.4</td>
+      <td>0.2</td>
+      <td>20</td>
+      <td>5000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>C1600_high_partial_mask</td>
+      <td>high</td>
+      <td>partial_mask</td>
+      <td>0.0</td>
+      <td>T=0.6 S=0.6</td>
+      <td>0.42 0.38</td>
+      <td>0.5 0.5</td>
+      <td>T=100 S=800</td>
+      <td>0.3</td>
+      <td>5.00 8.00</td>
+      <td>3.75 6.00</td>
+      <td>4.4</td>
+      <td>0.6</td>
+      <td>20</td>
+      <td>5000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>C1600_high_no_mask</td>
+      <td>high</td>
+      <td>no_mask</td>
+      <td>0.0</td>
+      <td>T=0.6 S=0.6</td>
+      <td>0.42 0.38</td>
+      <td>0.5 0.5</td>
+      <td>T=100 S=800</td>
+      <td>0.3</td>
+      <td>5.00 8.00</td>
+      <td>3.75 6.00</td>
+      <td>4.4</td>
+      <td>1.0</td>
+      <td>20</td>
+      <td>5000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>C1600_elementary_with_mask</td>
+      <td>elementary</td>
+      <td>with_mask</td>
+      <td>0.0</td>
+      <td>T=0.6 S=0</td>
+      <td>0.42 0.38</td>
+      <td>0.5 0.5</td>
+      <td>T=60 S=500</td>
+      <td>0.3</td>
+      <td>5.00 8.00</td>
+      <td>3.75 6.00</td>
+      <td>4.4</td>
+      <td>0.2</td>
+      <td>20</td>
+      <td>5000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>C1600_elementary_partial_mask</td>
+      <td>elementary</td>
+      <td>partial_mask</td>
+      <td>0.0</td>
+      <td>T=0.6 S=0</td>
+      <td>0.42 0.38</td>
+      <td>0.5 0.5</td>
+      <td>T=60 S=500</td>
+      <td>0.3</td>
+      <td>5.00 8.00</td>
+      <td>3.75 6.00</td>
+      <td>4.4</td>
+      <td>0.6</td>
+      <td>20</td>
+      <td>5000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>C1600_elementary_no_mask</td>
+      <td>elementary</td>
+      <td>no_mask</td>
+      <td>0.0</td>
+      <td>T=0.6 S=0</td>
+      <td>0.42 0.38</td>
+      <td>0.5 0.5</td>
+      <td>T=60 S=500</td>
+      <td>0.3</td>
+      <td>5.00 8.00</td>
+      <td>3.75 6.00</td>
+      <td>4.4</td>
+      <td>1.0</td>
+      <td>20</td>
+      <td>5000</td>
+    </tr>
+  </tbody>
+</table></div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="sos_lan_SoS">
+   
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="inner_cell" >
+  <div class="input_area cm-s-ipython" style="min-height: 31.457250000000002em">
+   <textarea rows="25"
+      class="sos-source" name="SoS">## The following cell uses SoS workflow to submit the jobs to a cluster system, with
+## output written to a temporary directory.
+
+input: for_each=all_contexts
+
+# done_if(path(f'{scratch_dir}/{name}.log').exists())
+
+task: queue='localhost', cores=4, walltime='1h', mem='4G', tags=name, workdir=scratch_dir, trunk_size=1
+
+sh: expand=True
+  #rm -f {name}.log.lock
+  outbreak_simulator --popsize {pop_size} \
+      --stop-if 't>{duration}' -j 4 \
+      --track-events INFECTION WARNING PLUGIN SHOW_SYMPTOM QUARANTINE \
+      --repeat {num_replicates} --resume \
+      --symptomatic-r0 {sym_r0} T={distancing_multiplier} S={distancing_multiplier} \
+      --asymptomatic-r0 {asym_r0} T={distancing_multiplier} S={distancing_multiplier} \
+      --incubation-period {incu_period} \
+      --prop-asym-carriers {prop_asym_carriers} \
+      --handle-symptomatic 'quarantine?duration=10&infected=true' \
+      --logfile {name}.log \
+      --plugin vaccinate \
+          --start 0 --proportion {vac_proportion} --immunity {vac_immunity} \
+          --infectivity {vac_infectivity} \
+      --plugin community_infection --start 0 --interval 1 --probability {community_infection_rate} </textarea>
+  </div>
+</div>
+
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<table id="task_desktop_t1218cc26132516bc_cc715ff4-522b-40dd-89b7-814582b63aae" class="task_table completed">
+<tr>
+  <td class="task_icon">
+    <i id="task_status_icon_desktop_t1218cc26132516bc_cc715ff4-522b-40dd-89b7-814582b63aae" class="fa fa-2x fa-fw fa-check-square-o"
+    null null null></i>
+  </td>
+  <td class="task_id">
+    <span><pre><i class="fa fa-fw fa-sitemap"></i></pre><pre>t1218cc26132516bc<div class="task_id_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', task:'t1218cc26132516bc', queue: 'desktop'})"></i><i class="fa fa-fw fa-play" onclick="task_action({action:'execute', task:'t1218cc26132516bc', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', task:'t1218cc26132516bc', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', task:'t1218cc26132516bc', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_tags">
+    <span id="status_tags_desktop_t1218cc26132516bc_cc715ff4-522b-40dd-89b7-814582b63aae"><pre><i class="fa fa-fw fa-info-circle"></i></pre><pre class="task_tags task_tag_1d652b5f54e8a6ab">1d652b5f54e8a6ab<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_C1600_high_with_mask">C1600_high_with_mask<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'C1600_high_with_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'C1600_high_with_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'C1600_high_with_mask', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_back-to-school">back-to-school<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'back-to-school', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_cell_cc715ff4">cell_cc715ff4<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'cell_cc715ff4', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_timer">
+    <pre><i class="fa fa-fw fa-clock-o"></i><time id="status_duration_desktop_t1218cc26132516bc_cc715ff4-522b-40dd-89b7-814582b63aae" class="completed" datetime="1629480435199.527">Ran for 1 min 30 sec</time></pre>
+  </td>
+  <td class="task_status">
+    <pre><i class="fa fa-fw fa-tasks"></i><span id="status_text_desktop_t1218cc26132516bc_cc715ff4-522b-40dd-89b7-814582b63aae">completed</span></pre>
+  </td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<table id="task_desktop_td07f0295ca027ce0_cc715ff4-522b-40dd-89b7-814582b63aae" class="task_table completed">
+<tr>
+  <td class="task_icon">
+    <i id="task_status_icon_desktop_td07f0295ca027ce0_cc715ff4-522b-40dd-89b7-814582b63aae" class="fa fa-2x fa-fw fa-check-square-o"
+    null null null></i>
+  </td>
+  <td class="task_id">
+    <span><pre><i class="fa fa-fw fa-sitemap"></i></pre><pre>td07f0295ca027ce0<div class="task_id_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', task:'td07f0295ca027ce0', queue: 'desktop'})"></i><i class="fa fa-fw fa-play" onclick="task_action({action:'execute', task:'td07f0295ca027ce0', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', task:'td07f0295ca027ce0', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', task:'td07f0295ca027ce0', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_tags">
+    <span id="status_tags_desktop_td07f0295ca027ce0_cc715ff4-522b-40dd-89b7-814582b63aae"><pre><i class="fa fa-fw fa-info-circle"></i></pre><pre class="task_tags task_tag_1d652b5f54e8a6ab">1d652b5f54e8a6ab<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_C1600_high_no_mask">C1600_high_no_mask<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'C1600_high_no_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'C1600_high_no_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'C1600_high_no_mask', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_back-to-school">back-to-school<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'back-to-school', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_cell_cc715ff4">cell_cc715ff4<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'cell_cc715ff4', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_timer">
+    <pre><i class="fa fa-fw fa-clock-o"></i><time id="status_duration_desktop_td07f0295ca027ce0_cc715ff4-522b-40dd-89b7-814582b63aae" class="completed" datetime="1629480523462.7522">Ran for 14 min 5 sec</time></pre>
+  </td>
+  <td class="task_status">
+    <pre><i class="fa fa-fw fa-tasks"></i><span id="status_text_desktop_td07f0295ca027ce0_cc715ff4-522b-40dd-89b7-814582b63aae">completed</span></pre>
+  </td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<table id="task_desktop_td40fb4c0a9275079_cc715ff4-522b-40dd-89b7-814582b63aae" class="task_table completed">
+<tr>
+  <td class="task_icon">
+    <i id="task_status_icon_desktop_td40fb4c0a9275079_cc715ff4-522b-40dd-89b7-814582b63aae" class="fa fa-2x fa-fw fa-check-square-o"
+    null null null></i>
+  </td>
+  <td class="task_id">
+    <span><pre><i class="fa fa-fw fa-sitemap"></i></pre><pre>td40fb4c0a9275079<div class="task_id_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', task:'td40fb4c0a9275079', queue: 'desktop'})"></i><i class="fa fa-fw fa-play" onclick="task_action({action:'execute', task:'td40fb4c0a9275079', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', task:'td40fb4c0a9275079', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', task:'td40fb4c0a9275079', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_tags">
+    <span id="status_tags_desktop_td40fb4c0a9275079_cc715ff4-522b-40dd-89b7-814582b63aae"><pre><i class="fa fa-fw fa-info-circle"></i></pre><pre class="task_tags task_tag_1d652b5f54e8a6ab">1d652b5f54e8a6ab<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_C1600_elementary_partial_mask">C1600_elementary_partial_mask<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'C1600_elementary_partial_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'C1600_elementary_partial_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'C1600_elementary_partial_mask', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_back-to-school">back-to-school<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'back-to-school', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_cell_cc715ff4">cell_cc715ff4<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'cell_cc715ff4', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_timer">
+    <pre><i class="fa fa-fw fa-clock-o"></i><time id="status_duration_desktop_td40fb4c0a9275079_cc715ff4-522b-40dd-89b7-814582b63aae" class="completed" datetime="1629481366477.067">Ran for 6 min 8 sec</time></pre>
+  </td>
+  <td class="task_status">
+    <pre><i class="fa fa-fw fa-tasks"></i><span id="status_text_desktop_td40fb4c0a9275079_cc715ff4-522b-40dd-89b7-814582b63aae">completed</span></pre>
+  </td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<table id="task_desktop_t080c39f9b0c4d8c6_cc715ff4-522b-40dd-89b7-814582b63aae" class="task_table completed">
+<tr>
+  <td class="task_icon">
+    <i id="task_status_icon_desktop_t080c39f9b0c4d8c6_cc715ff4-522b-40dd-89b7-814582b63aae" class="fa fa-2x fa-fw fa-check-square-o"
+    null null null></i>
+  </td>
+  <td class="task_id">
+    <span><pre><i class="fa fa-fw fa-sitemap"></i></pre><pre>t080c39f9b0c4d8c6<div class="task_id_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', task:'t080c39f9b0c4d8c6', queue: 'desktop'})"></i><i class="fa fa-fw fa-play" onclick="task_action({action:'execute', task:'t080c39f9b0c4d8c6', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', task:'t080c39f9b0c4d8c6', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', task:'t080c39f9b0c4d8c6', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_tags">
+    <span id="status_tags_desktop_t080c39f9b0c4d8c6_cc715ff4-522b-40dd-89b7-814582b63aae"><pre><i class="fa fa-fw fa-info-circle"></i></pre><pre class="task_tags task_tag_1d652b5f54e8a6ab">1d652b5f54e8a6ab<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_C1600_high_partial_mask">C1600_high_partial_mask<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'C1600_high_partial_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'C1600_high_partial_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'C1600_high_partial_mask', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_back-to-school">back-to-school<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'back-to-school', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_cell_cc715ff4">cell_cc715ff4<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'cell_cc715ff4', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_timer">
+    <pre><i class="fa fa-fw fa-clock-o"></i><time id="status_duration_desktop_t080c39f9b0c4d8c6_cc715ff4-522b-40dd-89b7-814582b63aae" class="completed" datetime="1629480435914.456">Ran for 4 min 6 sec</time></pre>
+  </td>
+  <td class="task_status">
+    <pre><i class="fa fa-fw fa-tasks"></i><span id="status_text_desktop_t080c39f9b0c4d8c6_cc715ff4-522b-40dd-89b7-814582b63aae">completed</span></pre>
+  </td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<table id="task_desktop_t8fbbecc694b65af9_cc715ff4-522b-40dd-89b7-814582b63aae" class="task_table completed">
+<tr>
+  <td class="task_icon">
+    <i id="task_status_icon_desktop_t8fbbecc694b65af9_cc715ff4-522b-40dd-89b7-814582b63aae" class="fa fa-2x fa-fw fa-check-square-o"
+    null null null></i>
+  </td>
+  <td class="task_id">
+    <span><pre><i class="fa fa-fw fa-sitemap"></i></pre><pre>t8fbbecc694b65af9<div class="task_id_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', task:'t8fbbecc694b65af9', queue: 'desktop'})"></i><i class="fa fa-fw fa-play" onclick="task_action({action:'execute', task:'t8fbbecc694b65af9', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', task:'t8fbbecc694b65af9', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', task:'t8fbbecc694b65af9', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_tags">
+    <span id="status_tags_desktop_t8fbbecc694b65af9_cc715ff4-522b-40dd-89b7-814582b63aae"><pre><i class="fa fa-fw fa-info-circle"></i></pre><pre class="task_tags task_tag_1d652b5f54e8a6ab">1d652b5f54e8a6ab<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_C1600_elementary_with_mask">C1600_elementary_with_mask<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'C1600_elementary_with_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'C1600_elementary_with_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'C1600_elementary_with_mask', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_back-to-school">back-to-school<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'back-to-school', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_cell_cc715ff4">cell_cc715ff4<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'cell_cc715ff4', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_timer">
+    <pre><i class="fa fa-fw fa-clock-o"></i><time id="status_duration_desktop_t8fbbecc694b65af9_cc715ff4-522b-40dd-89b7-814582b63aae" class="completed" datetime="1629480436818.0698">Ran for 1 min 9 sec</time></pre>
+  </td>
+  <td class="task_status">
+    <pre><i class="fa fa-fw fa-tasks"></i><span id="status_text_desktop_t8fbbecc694b65af9_cc715ff4-522b-40dd-89b7-814582b63aae">completed</span></pre>
+  </td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    
+
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<table id="task_desktop_tc2399746a1db7d9c_cc715ff4-522b-40dd-89b7-814582b63aae" class="task_table completed">
+<tr>
+  <td class="task_icon">
+    <i id="task_status_icon_desktop_tc2399746a1db7d9c_cc715ff4-522b-40dd-89b7-814582b63aae" class="fa fa-2x fa-fw fa-check-square-o"
+    null null null></i>
+  </td>
+  <td class="task_id">
+    <span><pre><i class="fa fa-fw fa-sitemap"></i></pre><pre>tc2399746a1db7d9c<div class="task_id_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', task:'tc2399746a1db7d9c', queue: 'desktop'})"></i><i class="fa fa-fw fa-play" onclick="task_action({action:'execute', task:'tc2399746a1db7d9c', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', task:'tc2399746a1db7d9c', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', task:'tc2399746a1db7d9c', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_tags">
+    <span id="status_tags_desktop_tc2399746a1db7d9c_cc715ff4-522b-40dd-89b7-814582b63aae"><pre><i class="fa fa-fw fa-info-circle"></i></pre><pre class="task_tags task_tag_1d652b5f54e8a6ab">1d652b5f54e8a6ab<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'1d652b5f54e8a6ab', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_C1600_elementary_no_mask">C1600_elementary_no_mask<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'C1600_elementary_no_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'C1600_elementary_no_mask', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'C1600_elementary_no_mask', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_back-to-school">back-to-school<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'back-to-school', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'back-to-school', queue: 'desktop'})"></i></div></pre><pre class="task_tags task_tag_cell_cc715ff4">cell_cc715ff4<div class="task_tag_actions"><i class="fa fa-fw fa-refresh" onclick="task_action({action:'status', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-stop"" onclick="task_action({action:'kill', tag:'cell_cc715ff4', queue: 'desktop'})"></i><i class="fa fa-fw fa-trash"" onclick="task_action({action:'purge', tag:'cell_cc715ff4', queue: 'desktop'})"></i></div></pre></span>
+  </td>
+  <td class="task_timer">
+    <pre><i class="fa fa-fw fa-clock-o"></i><time id="status_duration_desktop_tc2399746a1db7d9c_cc715ff4-522b-40dd-89b7-814582b63aae" class="completed" datetime="1629480502732.8542">Ran for 19 min 35 sec</time></pre>
+  </td>
+  <td class="task_status">
+    <pre><i class="fa fa-fw fa-tasks"></i><span id="status_text_desktop_tc2399746a1db7d9c_cc715ff4-522b-40dd-89b7-814582b63aae">completed</span></pre>
+  </td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="sos_lan_SoS">
+   
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="inner_cell" >
+  <div class="input_area cm-s-ipython" style="min-height: 100.67178em">
+   <textarea rows="82"
+      class="sos-source" name="SoS">import pickle
+import os
+import re
+import csv
+import pandas as pd
+from collections import defaultdict
+
+def get_result(name):
+    print(f'Processing {name}', flush=True)
+
+    res = {}
+    
+    file = open(name + '.log', 'rU')
+    reader = csv.reader(file, delimiter='\t')
+    headers = next(reader, None)
+    IDs = set()
+    
+    n_s_workplace_infection = 0
+    n_t_workplace_infection = 0
+    n_s_community_infection = 0
+    n_t_community_infection = 0
+    n_s_quarantine_due_to_symptom = 0
+    n_t_quarantine_due_to_symptom = 0
+    
+    n_workplace_infections = defaultdict(int)
+    n_community_infections = defaultdict(int)
+    
+    for row in reader:
+        IDs.add(row[0])
+        if row[2] == 'INFECTION':
+            if row[4].startswith('by=.'):
+                if row[3].startswith('S_'):
+                    n_s_community_infection += 1                    
+                else:
+                    n_t_community_infection += 1
+                n_community_infections[row[0]] += 1
+            else:
+                if row[3].startswith('S_'):
+                    n_s_workplace_infection += 1                    
+                else:
+                    n_t_workplace_infection += 1
+                n_workplace_infections[row[0]] += 1
+        elif row[2] == 'QUARANTINE':
+            if 'reason=show symptom' in row[4]:
+                if row[3].startswith('S_'):
+                    n_s_quarantine_due_to_symptom += 1                    
+                else:
+                    n_t_quarantine_due_to_symptom += 1            
+    file.close()
+    
+    replicates = len(IDs)
+    
+    # we need to scale to 2000 person weeks
+    # num_events = 8 weeks * 60 people * replicates
+    # num_events * 2000/replicates/8/60 = 2000 week person
+    school = "high" if 'high' in name else 'elementary'
+    if school == "high":
+        scaling_factor = 1 / replicates
+        n_teachers = 100
+        n_students = 800
+    else:
+        scaling_factor = 1 / replicates
+        n_teachers = 60
+        n_students = 500
+
+    res['Proportion of schools with no infection %'] = 100 - len(n_workplace_infections) * scaling_factor * 100
+    
+    #res['Avg number of community acquired Infections'] = (n_s_community_infection + n_t_community_infection ) * scaling_factor    
+    #res['Avg number of school acquired Infections'] = (n_s_workplace_infection + n_t_workplace_infection) * scaling_factor
+    
+    res['Avg proportion of students infected from community %'] = (n_s_community_infection * scaling_factor) / n_students * 100
+    
+    res['Avg proportion of students infected from school %'] = (n_s_workplace_infection * scaling_factor) / n_students * 100
+    #res['Avg proportion of teacher infected from school %'] = (n_t_workplace_infection * scaling_factor) / n_teachers * 100
+    
+    res['Avg proportion of students isolated %'] = n_s_quarantine_due_to_symptom * scaling_factor  / n_students * 100
+    #res['Avg proportion of symptomatic teachers %'] = n_t_quarantine_due_to_symptom * scaling_factor  / n_teachers * 100
+    #res['num_replicates'] = replicates
+
+    with open(name + '.pickle', 'wb') as outfile:
+        pickle.dump(res, outfile)
+    return res</textarea>
+  </div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class="sos_lan_SoS">
+   
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="inner_cell" >
+  <div class="input_area cm-s-ipython" style="min-height: 3.5285800000000003em">
+   <textarea rows="2"
+      class="sos-source" name="SoS">for name in [x['name'] for x in all_contexts]:
+    get_result(name)</textarea>
+  </div>
+</div>
+
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Processing C1600_high_with_mask
+Processing C1600_high_partial_mask
+Processing C1600_high_no_mask
+Processing C1600_elementary_with_mask
+Processing C1600_elementary_partial_mask
+Processing C1600_elementary_no_mask
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
     </div>
   </div>
 </body>
