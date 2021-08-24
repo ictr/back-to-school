@@ -13829,15 +13829,15 @@ textarea.sos-source {
       </div><div class="cell border-box-sizing text_cell rendered">
       <div class="inner_cell">
       <div class="text_cell_render border-box-sizing rendered_html">
-      <p>The following table lists</p>
+      <p>We ran <code>10,000</code> replicate simulations for each scenario and the following table lists</p>
 <ol>
 <li><strong>Community infection rate (per mission)</strong>, which is assumed to be <code>1600/million</code> now, but we also provide results for <code>400/million</code> for comparison purposes.</li>
 <li><strong>School</strong> can be either high school or elementary school, which differ by school size and student movement patterns.</li>
 <li><strong>Mask wearing</strong>, can be no mask, with mask, or non-mandatory, for which assume 50% of students and teachers will wear mask.</li>
-<li><strong>Proportion of schools that have no infection</strong> at all in a month.</li>
-<li><strong>Average proportion of students who will get infected from the community</strong> (home). This proportion is impact on risk from the community infection rate, vaccine proportions, and the proportion of students who have been infected and then remain immune to re-infection.</li>
-<li><strong>Average proportion of students who will get infected from school</strong>. </li>
-<li><strong>Average proportion of students who will get isolated after showing COVID symptoms</strong>, with infections from community or their schools.</li>
+<li><strong>Percentage of schools that have no school-transmitted infection</strong>. Students may be infected with the virus from home, but not from school.</li>
+<li><strong>Percentage of students infected in community</strong>. This number reflects risks from the community infection rate, vaccine coverage, and the proportion of students who have recovered from COVID infections.</li>
+<li><strong>Percentage of students infected from school</strong>. This number reflects the risk of the schools from which students get infected with the coronavirus.</li>
+<li><strong>Percentage of students isolated due to COVID symptoms</strong>. This number reflects the overall students who are impacted, including students who have been infected from both school and community, but exclude students who do not show any COVID symptoms.</li>
 </ol>
 
       </div>
@@ -13876,18 +13876,18 @@ textarea.sos-source {
 <div class="output_html rendered_html output_subarea ">
 
     <div class='dataframe_container' style="max-height:400px">
-    <input type="text" class='dataframe_input' id="search_fpedo7fh" onkeyup="filterDataFrame('fpedo7fh')" placeholder="Search for names..">
-    <table border="1" id="dataframe_fpedo7fh" class="sos_dataframe dataframe">
+    <input type="text" class='dataframe_input' id="search_5f7sqyt2" onkeyup="filterDataFrame('5f7sqyt2')" placeholder="Search for names..">
+    <table border="1" id="dataframe_5f7sqyt2" class="sos_dataframe dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th> &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('fpedo7fh', 0, 'numeric')"></th>
-      <th>Community Infection Rate (per million) &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('fpedo7fh', 1, 'numeric')"></th>
-      <th>School &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('fpedo7fh', 2, 'alphabetic')"></th>
-      <th>Mask wearing &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('fpedo7fh', 3, 'alphabetic')"></th>
-      <th>Proportion of schools with no infection % &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('fpedo7fh', 4, 'numeric')"></th>
-      <th>Avg proportion of students infected from community % &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('fpedo7fh', 5, 'numeric')"></th>
-      <th>Avg proportion of students infected from school % &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('fpedo7fh', 6, 'numeric')"></th>
-      <th>Avg proportion of students isolated % &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('fpedo7fh', 7, 'numeric')"></th>
+      <th> &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 0, 'numeric')"></th>
+      <th>Community Infection Rate (per million) &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 1, 'numeric')"></th>
+      <th>School &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 2, 'alphabetic')"></th>
+      <th>Mask wearing &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 3, 'alphabetic')"></th>
+      <th>Percentage of schools with no school-transmitted infections % &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 4, 'numeric')"></th>
+      <th>Percentage of students infected in community, with 95% CI &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 5, 'alphabetic')"></th>
+      <th>Percentage of students infected at school, with 95% CI &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 6, 'alphabetic')"></th>
+      <th>Percentage of students isolated due to COVID symptoms, with 95% CI &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 7, 'alphabetic')"></th>
     </tr>
   </thead>
   <tbody>
@@ -13897,9 +13897,9 @@ textarea.sos-source {
       <td>high</td>
       <td>with_mask</td>
       <td>0.8</td>
-      <td>2.8</td>
-      <td>0.8</td>
-      <td>1.9</td>
+      <td>2.8 [1.8, 4.0]</td>
+      <td>0.8 [0.1, 1.8]</td>
+      <td>1.9 [1.0, 3.0]</td>
     </tr>
     <tr>
       <th>1</th>
@@ -13907,9 +13907,9 @@ textarea.sos-source {
       <td>high</td>
       <td>partial_mask</td>
       <td>0.0</td>
-      <td>2.8</td>
-      <td>4.2</td>
-      <td>3.5</td>
+      <td>2.8 [1.8, 3.9]</td>
+      <td>4.2 [1.4, 8.4]</td>
+      <td>3.5 [1.6, 6.1]</td>
     </tr>
     <tr>
       <th>2</th>
@@ -13917,9 +13917,9 @@ textarea.sos-source {
       <td>high</td>
       <td>no_mask</td>
       <td>0.0</td>
-      <td>2.7</td>
-      <td>15.4</td>
-      <td>7.7</td>
+      <td>2.7 [1.6, 3.8]</td>
+      <td>15.4 [5.0, 29.1]</td>
+      <td>7.7 [3.0, 14.2]</td>
     </tr>
     <tr>
       <th>3</th>
@@ -13927,9 +13927,9 @@ textarea.sos-source {
       <td>elementary</td>
       <td>with_mask</td>
       <td>2.7</td>
-      <td>3.0</td>
-      <td>1.0</td>
-      <td>2.1</td>
+      <td>3.0 [1.6, 4.6]</td>
+      <td>1.0 [0.0, 2.4]</td>
+      <td>2.1 [0.8, 3.8]</td>
     </tr>
     <tr>
       <th>4</th>
@@ -13937,9 +13937,9 @@ textarea.sos-source {
       <td>elementary</td>
       <td>partial_mask</td>
       <td>0.0</td>
-      <td>2.9</td>
-      <td>5.8</td>
-      <td>4.2</td>
+      <td>2.9 [1.6, 4.4]</td>
+      <td>5.8 [1.4, 12.8]</td>
+      <td>4.2 [1.4, 8.4]</td>
     </tr>
     <tr>
       <th>5</th>
@@ -13947,9 +13947,9 @@ textarea.sos-source {
       <td>elementary</td>
       <td>no_mask</td>
       <td>0.0</td>
-      <td>2.8</td>
-      <td>21.0</td>
-      <td>9.7</td>
+      <td>2.8 [1.6, 4.2]</td>
+      <td>21.0 [5.4, 41.0]</td>
+      <td>9.7 [2.8, 19.2]</td>
     </tr>
     <tr>
       <th>6</th>
@@ -13957,9 +13957,9 @@ textarea.sos-source {
       <td>high</td>
       <td>with_mask</td>
       <td>32.1</td>
-      <td>0.7</td>
-      <td>0.2</td>
-      <td>0.5</td>
+      <td>0.7 [0.2, 1.2]</td>
+      <td>0.2 [0.0, 0.8]</td>
+      <td>0.5 [0.0, 1.1]</td>
     </tr>
     <tr>
       <th>7</th>
@@ -13967,9 +13967,9 @@ textarea.sos-source {
       <td>high</td>
       <td>partial_mask</td>
       <td>7.8</td>
-      <td>0.7</td>
-      <td>1.0</td>
-      <td>0.8</td>
+      <td>0.7 [0.1, 1.2]</td>
+      <td>1.0 [0.0, 3.4]</td>
+      <td>0.8 [0.0, 2.2]</td>
     </tr>
     <tr>
       <th>8</th>
@@ -13977,9 +13977,9 @@ textarea.sos-source {
       <td>high</td>
       <td>no_mask</td>
       <td>2.9</td>
-      <td>0.7</td>
-      <td>3.9</td>
-      <td>1.8</td>
+      <td>0.7 [0.1, 1.2]</td>
+      <td>3.9 [0.0, 13.0]</td>
+      <td>1.8 [0.1, 5.9]</td>
     </tr>
     <tr>
       <th>9</th>
@@ -13987,9 +13987,9 @@ textarea.sos-source {
       <td>elementary</td>
       <td>with_mask</td>
       <td>40.0</td>
-      <td>0.8</td>
-      <td>0.3</td>
-      <td>0.5</td>
+      <td>0.8 [0.2, 1.6]</td>
+      <td>0.3 [0.0, 1.2]</td>
+      <td>0.5 [0.0, 1.4]</td>
     </tr>
     <tr>
       <th>10</th>
@@ -13997,9 +13997,9 @@ textarea.sos-source {
       <td>elementary</td>
       <td>partial_mask</td>
       <td>13.0</td>
-      <td>0.7</td>
-      <td>1.5</td>
-      <td>1.1</td>
+      <td>0.7 [0.2, 1.6]</td>
+      <td>1.5 [0.0, 5.8]</td>
+      <td>1.1 [0.0, 3.4]</td>
     </tr>
     <tr>
       <th>11</th>
@@ -14007,9 +14007,9 @@ textarea.sos-source {
       <td>elementary</td>
       <td>no_mask</td>
       <td>7.0</td>
-      <td>0.7</td>
-      <td>6.2</td>
-      <td>2.7</td>
+      <td>0.7 [0.2, 1.6]</td>
+      <td>6.2 [0.0, 21.6]</td>
+      <td>2.7 [0.0, 9.4]</td>
     </tr>
   </tbody>
 </table></div>
