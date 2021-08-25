@@ -13809,6 +13809,7 @@ textarea.sos-source {
 <li>If masks are not worn at all, <code>15.4%</code> of high school students will be infected within a month, and one fifth (<code>21.0%</code>) all students in elementary schools will be infected. Again, we are assuming that there will be no post-infection contact tracing and testing will be performed so asymptomatic carriers will continue to attend school and infect others.</li>
 <li>The proportion of students who will be isolated due to the showing of symptoms will be <code>1.8%</code> for high school students and <code>2.1%</code> for elementary school students if masks are worn. About <code>7.7%</code> of students in high school and <code>9.7%</code> of students in elementary schools will be isolated if masks are not worn.</li>
 <li>If community infection rate drops to 1/4 of the current level (around <code>500</code> daily new cases in Harris County or <code>750</code> in the Greater Houston Area), students who will be isolated due to COVID-19 infections will be much lower, which will be around <code>0.5%</code> if masks are worn at all time, and <code>2.5%</code> if masks are not worn.</li>
+<li>If we increase the vaccination coverage to an almost ideal level at which  <code>90%</code> of all teachers are vaccinated and <code>60%</code> of high school students are vaccinated, there will still be a significant number of breakthrough cases.</li>
 </ol>
 <p>These results reflect our assumptions that</p>
 <ol>
@@ -13833,6 +13834,7 @@ textarea.sos-source {
 <ol>
 <li><strong>Community infection rate (per mission)</strong>, which is assumed to be <code>1600/million</code> now, but we also provide results for <code>400/million</code> for comparison purposes.</li>
 <li><strong>School</strong> can be either high school or elementary school, which differ by school size and student movement patterns.</li>
+<li><strong>Vaccination Coverage (teachers / students)</strong>. In addition to the assumed vaccination rates at the present time, we also simulated scenarios when <code>90%</code> of teachers are vaccinated and <code>60%</code> of high school students are vaccinated.</li>
 <li><strong>Mask wearing</strong>, can be no mask, with mask, or non-mandatory, for which assume 50% of students and teachers will wear mask.</li>
 <li><strong>Percentage of schools that have no school-transmitted infection</strong>. Students may be infected with the virus from home, but not from school.</li>
 <li><strong>Percentage of students infected in community</strong>. This number reflects risks from the community infection rate, vaccine coverage, and the proportion of students who have recovered from COVID infections.</li>
@@ -13862,7 +13864,7 @@ textarea.sos-source {
 
 
 <div class="output_html rendered_html output_subarea ">
-<div class="sos_hint">> res: DataFrame of shape (12, 7)</div>
+<div class="sos_hint">> res: DataFrame of shape (24, 8)</div>
 </div>
 
 </div>
@@ -13876,18 +13878,19 @@ textarea.sos-source {
 <div class="output_html rendered_html output_subarea ">
 
     <div class='dataframe_container' style="max-height:400px">
-    <input type="text" class='dataframe_input' id="search_5f7sqyt2" onkeyup="filterDataFrame('5f7sqyt2')" placeholder="Search for names..">
-    <table border="1" id="dataframe_5f7sqyt2" class="sos_dataframe dataframe">
+    <input type="text" class='dataframe_input' id="search_019vc7vm" onkeyup="filterDataFrame('019vc7vm')" placeholder="Search for names..">
+    <table border="1" id="dataframe_019vc7vm" class="sos_dataframe dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th> &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 0, 'numeric')"></th>
-      <th>Community Infection Rate (per million) &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 1, 'numeric')"></th>
-      <th>School &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 2, 'alphabetic')"></th>
-      <th>Mask wearing &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 3, 'alphabetic')"></th>
-      <th>Percentage of schools with no school-transmitted infections % &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 4, 'numeric')"></th>
-      <th>Percentage of students infected in community, with 95% CI &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 5, 'alphabetic')"></th>
-      <th>Percentage of students infected at school, with 95% CI &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 6, 'alphabetic')"></th>
-      <th>Percentage of students isolated due to COVID symptoms, with 95% CI &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('5f7sqyt2', 7, 'alphabetic')"></th>
+      <th> &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('019vc7vm', 0, 'numeric')"></th>
+      <th>Community Infection Rate (per million) &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('019vc7vm', 1, 'numeric')"></th>
+      <th>School &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('019vc7vm', 2, 'alphabetic')"></th>
+      <th>Vaccination Coverage (teachers / students) &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('019vc7vm', 3, 'alphabetic')"></th>
+      <th>Mask wearing &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('019vc7vm', 4, 'alphabetic')"></th>
+      <th>Percentage of schools with no school-transmitted infections % &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('019vc7vm', 5, 'numeric')"></th>
+      <th>Percentage of students infected in community, with 95% CI &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('019vc7vm', 6, 'alphabetic')"></th>
+      <th>Percentage of students infected at school, with 95% CI &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('019vc7vm', 7, 'alphabetic')"></th>
+      <th>Percentage of students isolated due to COVID symptoms, with 95% CI &nbsp; <i class="fa fa-sort" style="color:lightgray" onclick="sortDataFrame('019vc7vm', 8, 'alphabetic')"></th>
     </tr>
   </thead>
   <tbody>
@@ -13895,6 +13898,7 @@ textarea.sos-source {
       <th>0</th>
       <td>1600</td>
       <td>high</td>
+      <td>60% / 30%</td>
       <td>with_mask</td>
       <td>0.8</td>
       <td>2.8 [1.8, 4.0]</td>
@@ -13905,6 +13909,7 @@ textarea.sos-source {
       <th>1</th>
       <td>1600</td>
       <td>high</td>
+      <td>60% / 30%</td>
       <td>partial_mask</td>
       <td>0.0</td>
       <td>2.8 [1.8, 3.9]</td>
@@ -13915,6 +13920,7 @@ textarea.sos-source {
       <th>2</th>
       <td>1600</td>
       <td>high</td>
+      <td>60% / 30%</td>
       <td>no_mask</td>
       <td>0.0</td>
       <td>2.7 [1.6, 3.8]</td>
@@ -13925,8 +13931,9 @@ textarea.sos-source {
       <th>3</th>
       <td>1600</td>
       <td>elementary</td>
+      <td>60% / 0%</td>
       <td>with_mask</td>
-      <td>2.7</td>
+      <td>2.5</td>
       <td>3.0 [1.6, 4.6]</td>
       <td>1.0 [0.0, 2.4]</td>
       <td>2.1 [0.8, 3.8]</td>
@@ -13935,26 +13942,95 @@ textarea.sos-source {
       <th>4</th>
       <td>1600</td>
       <td>elementary</td>
+      <td>60% / 0%</td>
       <td>partial_mask</td>
       <td>0.0</td>
       <td>2.9 [1.6, 4.4]</td>
-      <td>5.8 [1.4, 12.8]</td>
-      <td>4.2 [1.4, 8.4]</td>
+      <td>5.8 [1.2, 12.6]</td>
+      <td>4.2 [1.4, 8.2]</td>
     </tr>
     <tr>
       <th>5</th>
       <td>1600</td>
       <td>elementary</td>
+      <td>60% / 0%</td>
       <td>no_mask</td>
       <td>0.0</td>
       <td>2.8 [1.6, 4.2]</td>
-      <td>21.0 [5.4, 41.0]</td>
-      <td>9.7 [2.8, 19.2]</td>
+      <td>21.2 [5.2, 41.8]</td>
+      <td>9.8 [2.6, 19.6]</td>
     </tr>
     <tr>
       <th>6</th>
+      <td>1600</td>
+      <td>high</td>
+      <td>90% / 60%</td>
+      <td>with_mask</td>
+      <td>4.0</td>
+      <td>2.5 [1.5, 3.6]</td>
+      <td>0.5 [0.0, 1.2]</td>
+      <td>1.6 [0.8, 2.6]</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1600</td>
+      <td>high</td>
+      <td>90% / 60%</td>
+      <td>partial_mask</td>
+      <td>0.0</td>
+      <td>2.5 [1.5, 3.6]</td>
+      <td>2.2 [0.6, 4.8]</td>
+      <td>2.5 [1.1, 4.2]</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>1600</td>
+      <td>high</td>
+      <td>90% / 60%</td>
+      <td>no_mask</td>
+      <td>0.0</td>
+      <td>2.4 [1.5, 3.5]</td>
+      <td>6.4 [1.9, 13.0]</td>
+      <td>4.2 [1.6, 7.8]</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1600</td>
+      <td>elementary</td>
+      <td>90% / 0%</td>
+      <td>with_mask</td>
+      <td>3.0</td>
+      <td>3.0 [1.6, 4.4]</td>
+      <td>1.0 [0.0, 2.4]</td>
+      <td>2.1 [0.8, 3.8]</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1600</td>
+      <td>elementary</td>
+      <td>90% / 0%</td>
+      <td>partial_mask</td>
+      <td>0.0</td>
+      <td>2.9 [1.6, 4.4]</td>
+      <td>5.6 [1.2, 12.2]</td>
+      <td>4.1 [1.4, 8.0]</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1600</td>
+      <td>elementary</td>
+      <td>90% / 0%</td>
+      <td>no_mask</td>
+      <td>0.0</td>
+      <td>2.8 [1.6, 4.2]</td>
+      <td>19.7 [5.0, 39.6]</td>
+      <td>9.3 [2.6, 18.8]</td>
+    </tr>
+    <tr>
+      <th>12</th>
       <td>400</td>
       <td>high</td>
+      <td>60% / 30%</td>
       <td>with_mask</td>
       <td>32.1</td>
       <td>0.7 [0.2, 1.2]</td>
@@ -13962,9 +14038,10 @@ textarea.sos-source {
       <td>0.5 [0.0, 1.1]</td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>13</th>
       <td>400</td>
       <td>high</td>
+      <td>60% / 30%</td>
       <td>partial_mask</td>
       <td>7.8</td>
       <td>0.7 [0.1, 1.2]</td>
@@ -13972,9 +14049,10 @@ textarea.sos-source {
       <td>0.8 [0.0, 2.2]</td>
     </tr>
     <tr>
-      <th>8</th>
+      <th>14</th>
       <td>400</td>
       <td>high</td>
+      <td>60% / 30%</td>
       <td>no_mask</td>
       <td>2.9</td>
       <td>0.7 [0.1, 1.2]</td>
@@ -13982,34 +14060,103 @@ textarea.sos-source {
       <td>1.8 [0.1, 5.9]</td>
     </tr>
     <tr>
-      <th>9</th>
+      <th>15</th>
       <td>400</td>
       <td>elementary</td>
+      <td>60% / 0%</td>
       <td>with_mask</td>
-      <td>40.0</td>
+      <td>40.4</td>
       <td>0.8 [0.2, 1.6]</td>
-      <td>0.3 [0.0, 1.2]</td>
+      <td>0.2 [0.0, 1.2]</td>
       <td>0.5 [0.0, 1.4]</td>
     </tr>
     <tr>
-      <th>10</th>
+      <th>16</th>
       <td>400</td>
       <td>elementary</td>
+      <td>60% / 0%</td>
       <td>partial_mask</td>
-      <td>13.0</td>
-      <td>0.7 [0.2, 1.6]</td>
+      <td>13.2</td>
+      <td>0.8 [0.2, 1.6]</td>
       <td>1.5 [0.0, 5.8]</td>
+      <td>1.1 [0.0, 3.6]</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>400</td>
+      <td>elementary</td>
+      <td>60% / 0%</td>
+      <td>no_mask</td>
+      <td>6.8</td>
+      <td>0.7 [0.2, 1.6]</td>
+      <td>6.2 [0.0, 22.0]</td>
+      <td>2.7 [0.0, 9.2]</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>400</td>
+      <td>high</td>
+      <td>90% / 60%</td>
+      <td>with_mask</td>
+      <td>46.4</td>
+      <td>0.6 [0.1, 1.1]</td>
+      <td>0.1 [0.0, 0.5]</td>
+      <td>0.4 [0.0, 0.9]</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>400</td>
+      <td>high</td>
+      <td>90% / 60%</td>
+      <td>partial_mask</td>
+      <td>15.7</td>
+      <td>0.6 [0.1, 1.1]</td>
+      <td>0.5 [0.0, 1.9]</td>
+      <td>0.6 [0.0, 1.5]</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>400</td>
+      <td>high</td>
+      <td>90% / 60%</td>
+      <td>no_mask</td>
+      <td>7.1</td>
+      <td>0.6 [0.1, 1.2]</td>
+      <td>1.5 [0.0, 5.6]</td>
+      <td>1.0 [0.0, 3.0]</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>400</td>
+      <td>elementary</td>
+      <td>90% / 0%</td>
+      <td>with_mask</td>
+      <td>41.0</td>
+      <td>0.8 [0.2, 1.6]</td>
+      <td>0.2 [0.0, 1.2]</td>
+      <td>0.5 [0.0, 1.4]</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>400</td>
+      <td>elementary</td>
+      <td>90% / 0%</td>
+      <td>partial_mask</td>
+      <td>13.8</td>
+      <td>0.7 [0.2, 1.6]</td>
+      <td>1.5 [0.0, 5.6]</td>
       <td>1.1 [0.0, 3.4]</td>
     </tr>
     <tr>
-      <th>11</th>
+      <th>23</th>
       <td>400</td>
       <td>elementary</td>
+      <td>90% / 0%</td>
       <td>no_mask</td>
-      <td>7.0</td>
+      <td>7.9</td>
       <td>0.7 [0.2, 1.6]</td>
-      <td>6.2 [0.0, 21.6]</td>
-      <td>2.7 [0.0, 9.4]</td>
+      <td>5.5 [0.0, 19.8]</td>
+      <td>2.4 [0.0, 8.6]</td>
     </tr>
   </tbody>
 </table></div>
@@ -14041,6 +14188,7 @@ textarea.sos-source {
 <li><code>60%</code> of teachers and staff are vaccinated in both high schools and elementary schools.</li>
 <li><code>30%</code> of students are vaccinated in high schools.</li>
 <li>Students in elementary schools are not vaccinated.</li>
+<li>For comparison purposes, we also simulated scenarios under which <code>90%</code> of teachers are vaccinated and <code>60%</code> of high school students are vaccinated.</li>
 </ul>
 </li>
 <li><p><strong>Size of schools</strong>: According to online information, we assume that</p>
